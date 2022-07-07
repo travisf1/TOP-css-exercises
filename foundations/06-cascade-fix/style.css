@@ -3,12 +3,21 @@
   color: hsl(0, 100%, 50%);
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
 }
 
+/* added .para in front of .small-para in above selector so it targeted 
+elements with both classes*/
+
 .para {
   font-size: 22px;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .confirm {
@@ -17,17 +26,14 @@
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
+/* moved .confirm selector below .button selector so .confirm 
+had higher specificity */
 
-.child {
+.text .child {
   color: red;
   font-size: 14px;
 }
-
+/* added .text to selector above */
 div.text {
   color: green;
   font-size: 22px;
